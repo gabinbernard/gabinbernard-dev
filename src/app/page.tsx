@@ -1,95 +1,104 @@
-import Image from 'next/image'
-import styles from './page.module.css'
-
 export default function Home() {
-  return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+    const logos = [
+        "nextjs",
+        "js",
+        "ts",
+        "react",
+        "vue",
+        "angular",
+        "sass",
+        "nodejs",
+        "express",
+        "graphql",
+        "mysql",
+        "postgre",
+        "mongodb",
+        "nginx",
+        "zig",
+    ];
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+    return (
+        <main>
+            <div className="section">
+                <div className="main">
+                    <div className="container">
+                        <div className="main-title-overline">
+                            $ Bonjour,{" "}
+                            <span className="text-gradient-magic">je suis</span>
+                        </div>
+                        <h1 className="main-title">
+                            Gabin
+                            <br />
+                            BERNARD
+                        </h1>
+                    </div>
+                </div>
+            </div>
+            <div className="section section-dark">
+                <div className="container container-title">
+                    <div className="section-title-overline">Je suis</div>
+                    <h2 className="section-title">DEVELOPPEUR</h2>
+                </div>
+                <div className="content">
+                    <div className="container">
+                        <p className="section-subtitle">Depuis presque 4 ans</p>
+                        <div className="logo-grid">
+                            {logos.map((logo: string, i: number) => {
+                                return (
+                                    <img
+                                        className="logo-grid-elem"
+                                        src={`/logo/${logo}.svg`}
+                                        alt=""
+                                        style={{
+                                            "--logo-delay": `${i * 0.25}s`,
+                                        }}
+                                    />
+                                );
+                            })}
+                        </div>
+                        <p className="section-paragraph">
+                            <span className="section-check">✔</span>
+                            Dev. full-stack Typescript avec NextJS
+                        </p>
+                        <p className="section-paragraph">
+                            <span className="section-check">✔</span>
+                            Front-end avec React, Vue ou Angular, intégration
+                            avec SASS ou Tailwind
+                        </p>
+                        <p className="section-paragraph">
+                            <span className="section-check">✔</span>
+                            API Rest ou GraphQL avec NodeJS (Express ou Appolo)
+                            ou Go (Gin)
+                        </p>
+                        <p className="section-paragraph">
+                            <span className="section-check">✔</span>
+                            Bases de données SQL (MySQL / Postgre), No-SQL
+                            (Mongodb) et cache (Redis)
+                        </p>
+                        <p className="section-paragraph">
+                            <span className="section-check">✔</span>
+                            Clean code, bonnes pratiques, tests avec Jest
+                        </p>
+                        <p className="section-paragraph">
+                            <span className="section-check">✔</span>
+                            Web Assembly haute performance avec Zig
+                        </p>
+                    </div>
+                </div>
+            </div>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+            <div className="section">
+                <div className="container">
+                    <div className="section-title-overline">Je suis</div>
+                    <h2 className="section-title">DESIGNER</h2>
+                </div>
+            </div>
+            <div className="section section-dark">
+                <div className="container">
+                    <div className="section-title-overline">Et voici mes</div>
+                    <h2 className="section-title">PROJETS</h2>
+                </div>
+            </div>
+        </main>
+    );
 }
