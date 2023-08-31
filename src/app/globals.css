@@ -43,12 +43,12 @@ table {
 }
 
 :root {
-  --color-light: hsl(220deg, 25%, 80%);
-  --color-lighter: hsl(220deg, 25%, 88%);
-  --color-lightest: hsl(220deg, 25%, 100%);
-  --color-dark: hsl(220deg, 25%, 10%);
-  --color-darker: hsl(220deg, 25%, 2%);
-  --color-darkest: hsl(220deg, 25%, 0%);
+  --color-light: hsl(200deg, 40%, 80%);
+  --color-lighter: hsl(200deg, 40%, 88%);
+  --color-lightest: hsl(200deg, 40%, 100%);
+  --color-dark: hsl(200deg, 40%, 10%);
+  --color-darker: hsl(200deg, 40%, 2%);
+  --color-darkest: hsl(200deg, 40%, 0%);
 
   --color-magic-1: hsl(196, 100%, 50%);
   --color-magic-2: hsl(280, 77%, 62%);
@@ -60,6 +60,7 @@ main {
   font-size: 16px;
   line-height: 24px;
   overflow-x: hidden;
+  user-select: none;
 }
 
 .container {
@@ -73,20 +74,20 @@ main {
 }
 
 .section {
-  padding: 240px 0 360px 0;
+  padding: 288px 0 336px 0;
   background: linear-gradient(130deg, var(--color-lighter), var(--color-lightest), var(--color-light));
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  --color-check: hsl(150deg, 80%, 50%);
+  --color-check: hsl(160deg, 80%, 35%);
 }
 
 .section-dark {
   background: linear-gradient(130deg, var(--color-darker), var(--color-dark), var(--color-darkest));
   --color-subtitle: var(--color-lightest);
   --color-paragraph: var(--color-light);
-  --color-check: hsl(150deg, 80%, 50%);
+  --color-check: hsl(160deg, 80%, 50%);
 }
 
 .section-subtitle {
@@ -122,9 +123,18 @@ main {
   letter-spacing: -0.03em;
   margin-left: -0.04em;
   line-height: 120px;
-  background: -webkit-linear-gradient(0deg, hsl(220deg, 25%, 90%), hsl(220deg, 25%, 98%));
+  background: -webkit-linear-gradient(0deg, hsl(200deg, 40%, 90%), hsl(200deg, 40%, 98%));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.letter {
+  cursor: grab;
+  transition: 1s;
+}
+.letter:hover {
+  transition: 0.1s;
+  padding-left: 2.5rem;
 }
 
 .main {
@@ -208,19 +218,19 @@ main {
 
 .logo-grid-elem {
   height: 72px;
-  /* animation: logo-grid 4s infinite var(--logo-delay); */
+  animation: logo-grid 2s ease-in-out infinite var(--logo-delay);
 }
 
 @keyframes logo-grid {
   0% {
     filter: grayscale(1);
     opacity: 0.75;
-    transform: scale(0.95);
+    transform: scale(0.98);
   }
   25% {
     filter: grayscale(1);
     opacity: 0.75;
-    transform: scale(0.95);
+    transform: scale(0.98);
   }
   50% {
     filter: grayscale(0) saturate(1);
@@ -228,13 +238,13 @@ main {
     transform: scale(1);
   }
   75% {
-    filter: grayscale(0) saturate(2);
+    filter: grayscale(0) saturate(1);
     opacity: 1;
     transform: scale(1);
   }
   100% {
     filter: grayscale(1);
     opacity: 0.75;
-    transform: scale(0.95);
+    transform: scale(0.98);
   }
 }
