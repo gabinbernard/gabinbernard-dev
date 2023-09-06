@@ -145,7 +145,7 @@ export default function Home() {
                     </p>
                     <p className="section-paragraph">
                         <span className="section-check">✔</span>
-                        Bonne connaissances des principes d'UI
+                        Bonne onnaissance des principes d'UX et UI
                     </p>
                     <p className="section-paragraph">
                         <span className="section-check">✔</span>
@@ -153,7 +153,7 @@ export default function Home() {
                     </p>
                     <p className="section-paragraph">
                         <span className="section-check">✔</span>
-                        Touche créative et compétences techniques
+                        Touche créative et rigueur techniques
                     </p>
                 </div>
             </div>
@@ -161,6 +161,123 @@ export default function Home() {
                 <div className="container">
                     <div className="section-title-overline">Et voici mes</div>
                     <h2 className="section-title">PROJETS</h2>
+
+                    <div className="projet">
+                        <div className="projet-carousel">
+                            <img
+                                className="projet-carousel-img"
+                                src="/openbaguette.webp"
+                                alt=""
+                            />
+                        </div>
+                        <div className="projet-text">
+                            <h3 className="projet-title">Openbaguette</h3>
+                            <div className="projet-technos">
+                                <img
+                                    className="projet-technos-elem"
+                                    src="/logo/nextjs.svg"
+                                    alt="NextJS"
+                                />
+                                <img
+                                    className="projet-technos-elem"
+                                    src="/logo/react.svg"
+                                    alt="React"
+                                />
+                                <img
+                                    className="projet-technos-elem"
+                                    src="/logo/sass.svg"
+                                    alt="Sass"
+                                />
+                                <img
+                                    className="projet-technos-elem"
+                                    src="/logo/nodejs.svg"
+                                    alt="NodeJS"
+                                />
+                                <img
+                                    className="projet-technos-elem"
+                                    src="/logo/express.svg"
+                                    alt="Express"
+                                />
+                                <img
+                                    className="projet-technos-elem"
+                                    src="/logo/postgre.svg"
+                                    alt="Postgre"
+                                />
+                                <img
+                                    className="projet-technos-elem"
+                                    src="/logo/docker.svg"
+                                    alt="Docker"
+                                />
+                                <img
+                                    className="projet-technos-elem"
+                                    src="/logo/gitlab.svg"
+                                    alt="Gitlab"
+                                />
+                            </div>
+                            <p className="projet-description">
+                                Openbaguette est une plateforme d'apprentissage
+                                du Français pour les anglophones avec petite
+                                base d'utilisateurs actifs. Elle dispose
+                                d'énormémetns de ressources et d'outils
+                                interactifs pour un apprentissage autodidacte
+                                d'une grande rapidité.
+                            </p>
+                            <div className="projet-button">
+                                <div className="projet-button-arrow">➞</div>
+                                <div className="projet-button-text">
+                                    Visit openbaguette.com
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="projet">
+                        <div className="projet-carousel"></div>
+                        <div className="projet-text">
+                            <h3 className="projet-title">Igrayem</h3>
+                            <div className="projet-technos">
+                                <img
+                                    className="projet-technos-elem"
+                                    src="/logo/vue.svg"
+                                    alt="Vue"
+                                />
+                                <img
+                                    className="projet-technos-elem"
+                                    src="/logo/sass.svg"
+                                    alt="Sass"
+                                />
+                                <img
+                                    className="projet-technos-elem"
+                                    src="/logo/nodejs.svg"
+                                    alt="Nodejs"
+                                />
+                                <img
+                                    className="projet-technos-elem"
+                                    src="/logo/express.svg"
+                                    alt="Express"
+                                />
+                                <img
+                                    className="projet-technos-elem"
+                                    src="/logo/mysql.svg"
+                                    alt="MYsql"
+                                />
+                            </div>
+                            <p className="projet-description">
+                                Igrayem est une plateforme de mini-jeux entre
+                                amis (Poker, Blackjack, Pong, Concours de
+                                dessin...) permettant de créer ou de rejoindre
+                                des parties en quelques clics, avec ou sans
+                                compte. La jouabilité en temps réel est assurée
+                                par une connexion WebSocket (Socket.IO).
+                            </p>
+                            <div className="projet-button">
+                                <div className="projet-button-arrow">➞</div>
+                                <div className="projet-button-text">
+                                    Go to openbaguette.com
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr className="spacer" />
                 </div>
             </div>
         </main>
