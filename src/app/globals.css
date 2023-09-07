@@ -185,7 +185,7 @@ main {
 
 .section-subtitle {
     font-weight: 700;
-    letter-spacing: -0.03em;
+    letter-spacing: -0.05em;
     font-size: 72px;
     line-height: 72px;
     margin-bottom: 72px;
@@ -214,7 +214,7 @@ main {
     font-weight: 900;
     font-size: 72px;
     bottom: calc(100% - 0.8rem);
-    letter-spacing: -0.03em;
+    letter-spacing: -0.05em;
     margin-left: -0.04em;
     line-height: 72px;
     background: -webkit-linear-gradient(
@@ -273,7 +273,7 @@ main {
 .main-title {
     font-weight: 900;
     font-size: 96px;
-    letter-spacing: -0.03em;
+    letter-spacing: -0.05em;
     line-height: 110px;
     background: -webkit-linear-gradient(
         0deg,
@@ -375,7 +375,7 @@ main {
 
 .projet-title {
     font-weight: 700;
-    letter-spacing: -0.03em;
+    letter-spacing: -0.05em;
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 24px;
@@ -392,8 +392,8 @@ main {
 .projet-text {
     height: 100%;
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
 }
 
@@ -428,6 +428,11 @@ main {
     transition: 0.2s;
 }
 
+.projet-button a {
+    text-decoration: none;
+    color: var(--color-dark);
+}
+
 .projet-button:hover {
     padding: 18px 27px;
 }
@@ -450,7 +455,7 @@ main {
         font-weight: 900;
         font-size: 144px;
         bottom: calc(100% - 0.8rem);
-        letter-spacing: -0.03em;
+        letter-spacing: -0.05em;
         margin-left: -0.04em;
         line-height: 120px;
         background: -webkit-linear-gradient(
@@ -472,7 +477,7 @@ main {
     .main-title {
         font-weight: 900;
         font-size: 144px;
-        letter-spacing: -0.03em;
+        letter-spacing: -0.05em;
         line-height: 110px;
         background: -webkit-linear-gradient(
             0deg,
@@ -503,10 +508,14 @@ main {
 
     .projet-carousel {
         height: 25rem;
+        flex: 1 1 0px;
     }
 
     .projet-text {
         height: 100%;
+        flex: 1 1 0px;
+        justify-content: flex-start;
+        align-items: flex-start;
     }
 
     .projet-carousel {
@@ -517,17 +526,34 @@ main {
     .projet-technos {
         justify-content: flex-start;
     }
+
+    .projet:nth-child(2n) .projet-carousel {
+        order: 1;
+    }
 }
 
 .spacer {
     margin: 192px 0;
     border: none;
     height: 1px;
-    background: linear-gradient(
-        90deg,
-        transparent,
-        var(--color-light),
-        transparent
-    );
+    background-color: var(--color-dark);
     width: 100%;
+}
+
+.contact {
+    text-align: center;
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-text {
+    color: var(--color-light);
+    width: 100%;
+}
+
+.contact-icon {
+    height: 32px;
 }

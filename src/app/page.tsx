@@ -224,14 +224,25 @@ export default function Home() {
                             </p>
                             <div className="projet-button">
                                 <div className="projet-button-arrow">➞</div>
-                                <div className="projet-button-text">
-                                    Visit openbaguette.com
-                                </div>
+                                <a
+                                    target="_blank"
+                                    href="https://openbaguette.com"
+                                >
+                                    <div className="projet-button-text">
+                                        Visit openbaguette.com
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
                     <div className="projet">
-                        <div className="projet-carousel"></div>
+                        <div className="projet-carousel">
+                            <img
+                                className="projet-carousel-img"
+                                src="/igrayem.webp"
+                                alt=""
+                            />
+                        </div>
                         <div className="projet-text">
                             <h3 className="projet-title">Igrayem</h3>
                             <div className="projet-technos">
@@ -271,13 +282,74 @@ export default function Home() {
                             </p>
                             <div className="projet-button">
                                 <div className="projet-button-arrow">➞</div>
+                                <a target="_blank" href="https://igrayem.com">
+                                    <div className="projet-button-text">
+                                        Visit igrayem.com
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="projet">
+                        <div className="projet-carousel">
+                            <img
+                                className="projet-carousel-img"
+                                src="/wheel-game.webp"
+                                alt=""
+                            />
+                        </div>
+                        <div className="projet-text">
+                            <h3 className="projet-title">Wheel game</h3>
+                            <div className="projet-technos">
+                                <img
+                                    className="projet-technos-elem"
+                                    src="/logo/vue.svg"
+                                    alt="Vue"
+                                />
+                                <img
+                                    className="projet-technos-elem"
+                                    src="/logo/three.svg"
+                                    alt="Sass"
+                                />
+                            </div>
+                            <p className="projet-description">
+                                Jeu de course 3D, avec niveaux complètement
+                                personnalisables avec un simple fichier JSON,
+                                codé en 2 petites semaines (en comptant le temps
+                                d'apprentissage des technologies web 3D).
+                            </p>
+                            <div className="projet-button">
+                                <div className="projet-button-arrow">➞</div>
                                 <div className="projet-button-text">
-                                    Go to openbaguette.com
+                                    Play game
                                 </div>
                             </div>
                         </div>
                     </div>
                     <hr className="spacer" />
+                    <div className="contact">
+                        <p className="contact-text">Contact me</p>
+                        <a
+                            target="_blank"
+                            href="https://github.com/gabinbernard"
+                        >
+                            <img
+                                className="contact-icon"
+                                src="/logo/github.svg"
+                                alt=""
+                            />
+                        </a>
+                        <a
+                            target="_blank"
+                            href="https://www.linkedin.com/in/gabin-bernard-b504461b4/"
+                        >
+                            <img
+                                className="contact-icon"
+                                src="/logo/linkedin.svg"
+                                alt=""
+                            />
+                        </a>
+                    </div>
                 </div>
             </div>
         </main>
