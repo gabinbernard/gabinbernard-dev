@@ -1,0 +1,119 @@
+.section {
+    padding: 288px 0 336px 0;
+    background: linear-gradient(
+        130deg,
+        var(--color-lighter),
+        var(--color-lightest),
+        var(--color-light)
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    --color-check: hsl(160deg, 80%, 35%);
+}
+
+.section-title-overline {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.section-dark {
+    background: linear-gradient(
+        130deg,
+        var(--color-darker),
+        var(--color-dark),
+        var(--color-darkest)
+    );
+    --color-subtitle: var(--color-lightest);
+    --color-paragraph: var(--color-light);
+    --color-check: hsl(160deg, 80%, 50%);
+}
+
+.section-title,
+.section-title-overline {
+    position: absolute;
+    padding-right: 5rem;
+}
+
+.section-title {
+    font-weight: 900;
+    font-size: 72px;
+    bottom: calc(100% - 0.8rem);
+    letter-spacing: -0.05em;
+    margin-left: -0.04em;
+    line-height: 72px;
+    background: -webkit-linear-gradient(
+        0deg,
+        hsl(200deg, 40%, 90%),
+        hsl(200deg, 40%, 98%)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section-title-overline {
+    bottom: calc(100% + 0.4rem);
+    letter-spacing: -2px;
+    line-height: 120px;
+    color: var(--color-lighter);
+}
+
+.section-subtitle {
+    font-weight: 700;
+    letter-spacing: -0.05em;
+    font-size: 72px;
+    line-height: 72px;
+    margin-bottom: 72px;
+    color: var(--color-subtitle);
+}
+
+.section-paragraph {
+    color: var(--color-paragraph);
+    margin-bottom: 24px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.section-check {
+    margin: 0 2rem;
+    color: var(--color-check);
+}
+
+.section-dark .section-title-overline {
+    color: var(--color-darker);
+}
+.section-dark .section-title {
+    background: -webkit-linear-gradient(
+        0deg,
+        var(--color-darker),
+        var(--color-dark)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media screen and (min-width: 1000px) {
+    .section-title {
+        font-weight: 900;
+        font-size: 144px;
+        bottom: calc(100% - 0.8rem);
+        letter-spacing: -0.05em;
+        margin-left: -0.04em;
+        line-height: 120px;
+        background: -webkit-linear-gradient(
+            0deg,
+            hsl(200deg, 40%, 90%),
+            hsl(200deg, 40%, 98%)
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .section-title-overline {
+        bottom: calc(100% + 3.6rem);
+        letter-spacing: -2px;
+        line-height: 120px;
+        color: var(--color-lighter);
+    }
+}

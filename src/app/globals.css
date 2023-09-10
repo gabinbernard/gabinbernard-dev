@@ -1,139 +1,27 @@
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block;
-}
-body {
-    line-height: 1;
-}
-ol,
-ul {
-    list-style: none;
-}
-blockquote,
-q {
-    quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: "";
-    content: none;
-}
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
 :root {
-    --color-light: hsl(200deg, 40%, 80%);
-    --color-lighter: hsl(200deg, 40%, 88%);
-    --color-lightest: hsl(200deg, 40%, 100%);
-    --color-dark: hsl(200deg, 40%, 10%);
-    --color-darker: hsl(200deg, 40%, 2%);
-    --color-darkest: hsl(200deg, 40%, 0%);
+    --color-light: hsl(200deg, 45%, 80%);
+    --color-lighter: hsl(200deg, 45%, 90%);
+    --color-lightest: hsl(200deg, 45%, 100%);
+    --color-dark: hsl(200deg, 45%, 10%);
+    --color-darker: hsl(200deg, 45%, 2%);
+    --color-darkest: hsl(200deg, 45%, 0%);
 
-    --color-magic-1: hsl(196, 100%, 50%);
-    --color-magic-2: hsl(280, 77%, 62%);
-    --color-magic-3: hsl(347, 100%, 66%);
+    --color-magic-1: hsl(190, 80%, 50%);
+    --color-magic-2: hsl(280, 80%, 50%);
+    --color-magic-3: hsl(350, 80%, 50%);
+}
+
+.overlay {
+    z-index: 1;
+    pointer-events: none;
+    background: radial-gradient(transparent, transparent, #1123, #112a);
+    background-size: 100vmax 100vmax;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
 }
 
 main {
@@ -142,6 +30,13 @@ main {
     line-height: 24px;
     overflow-x: hidden;
     user-select: none;
+}
+
+.text-blue {
+    color: var(--color-magic-1);
+}
+.text-red {
+    color: var(--color-magic-3);
 }
 
 .container {
@@ -154,76 +49,6 @@ main {
 .container-title {
     position: absolute;
     top: 0;
-}
-
-.section {
-    padding: 288px 0 336px 0;
-    background: linear-gradient(
-        130deg,
-        var(--color-lighter),
-        var(--color-lightest),
-        var(--color-light)
-    );
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    --color-check: hsl(160deg, 80%, 35%);
-}
-
-.section-dark {
-    background: linear-gradient(
-        130deg,
-        var(--color-darker),
-        var(--color-dark),
-        var(--color-darkest)
-    );
-    --color-subtitle: var(--color-lightest);
-    --color-paragraph: var(--color-light);
-    --color-check: hsl(160deg, 80%, 50%);
-}
-
-.section-subtitle {
-    font-weight: 700;
-    letter-spacing: -0.05em;
-    font-size: 72px;
-    line-height: 72px;
-    margin-bottom: 72px;
-    color: var(--color-subtitle);
-}
-
-.section-title,
-.section-title-overline {
-    position: absolute;
-    padding-right: 5rem;
-}
-
-.section-paragraph {
-    color: var(--color-paragraph);
-    margin-bottom: 24px;
-    font-size: 24px;
-    font-weight: 500;
-}
-
-.section-check {
-    margin: 0 2rem;
-    color: var(--color-check);
-}
-
-.section-title {
-    font-weight: 900;
-    font-size: 72px;
-    bottom: calc(100% - 0.8rem);
-    letter-spacing: -0.05em;
-    margin-left: -0.04em;
-    line-height: 72px;
-    background: -webkit-linear-gradient(
-        0deg,
-        hsl(200deg, 40%, 90%),
-        hsl(200deg, 40%, 98%)
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 .letter {
@@ -243,31 +68,40 @@ main {
     align-self: flex-start;
 }
 
-.main-title-overline,
-.section-title-overline {
+.main-title-overline {
     font-size: 32px;
     font-weight: 700;
 }
 
-.section-title-overline {
-    bottom: calc(100% + 0.4rem);
-    letter-spacing: -2px;
-    line-height: 120px;
-    color: var(--color-lighter);
+.main-description {
+    margin-top: 240px;
+    font-size: 72px;
+    line-height: 72px;
+    font-weight: 700;
+    letter-spacing: -0.05em;
+    position: relative;
+    font-style: italic;
 }
 
-.section-dark .section-title {
-    background: -webkit-linear-gradient(
-        0deg,
-        var(--color-darker),
-        var(--color-dark)
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.quote:first-child,
+.quote:last-child {
+    position: absolute;
+    font-size: 144px;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-dark);
 }
 
-.section-dark .section-title-overline {
-    color: var(--color-darker);
+.quote:first-child {
+    top: 0px;
+    left: -96px;
+}
+
+.quote:last-child {
+    bottom: -48px;
+    right: 0px;
 }
 
 .main-title {
@@ -283,7 +117,7 @@ main {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding: 2rem;
-    margin: 0 -2rem -2rem -2rem;
+    margin: 0rem -2rem -2rem -2rem;
 }
 
 .text-gradient-magic {
@@ -358,7 +192,7 @@ main {
 }
 
 .projet + .projet {
-    margin-top: 192px;
+    margin-top: 144px;
 }
 
 .projet-carousel {
@@ -451,34 +285,11 @@ main {
 }
 
 @media screen and (min-width: 1000px) {
-    .section-title {
-        font-weight: 900;
-        font-size: 144px;
-        bottom: calc(100% - 0.8rem);
-        letter-spacing: -0.05em;
-        margin-left: -0.04em;
-        line-height: 120px;
-        background: -webkit-linear-gradient(
-            0deg,
-            hsl(200deg, 40%, 90%),
-            hsl(200deg, 40%, 98%)
-        );
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
-    .section-title-overline {
-        bottom: calc(100% + 3.6rem);
-        letter-spacing: -2px;
-        line-height: 120px;
-        color: var(--color-lighter);
-    }
-
     .main-title {
         font-weight: 900;
         font-size: 144px;
         letter-spacing: -0.05em;
-        line-height: 110px;
+        line-height: 108px;
         background: -webkit-linear-gradient(
             0deg,
             var(--color-darker),
@@ -487,7 +298,7 @@ main {
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         padding: 2rem;
-        margin: 0 -2rem -2rem -2rem;
+        margin: -1rem -2rem -2rem -2rem;
     }
 
     .letter {

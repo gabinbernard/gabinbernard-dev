@@ -1,0 +1,29 @@
+.more {
+    margin-top: 144px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.more-text {
+    margin-right: 24px;
+    color: var(--color-lighter);
+    font-size: 48px;
+    font-weight: 900;
+    letter-spacing: -0.05em;
+    font-style: italic;
+}
+
+.more-icon {
+    display: inline-block;
+    height: 48px;
+}
+
+@media screen and (min-width: 1000px) {
+    .more {
+        flex-direction: row;
+        gap: 24px;
+    }
+}
