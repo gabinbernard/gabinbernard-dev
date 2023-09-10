@@ -56,7 +56,7 @@ export default function Home() {
                 <div className="section">
                     <div className="container">
                         <div className="main-title-overline">
-                            Bonjour,
+                            Bonjour,&nbsp;
                             <span className="text-gradient-magic">je suis</span>
                         </div>
                         <h1 className="main-title">
@@ -120,7 +120,7 @@ export default function Home() {
                             <p className="section-paragraph">
                                 <span className="section-check">✔</span>
                                 API Rest ou GraphQL avec NodeJS (Express ou
-                                Appolo) ou Go (Gin)
+                                Apollo) ou Go (Gin)
                             </p>
                             <p className="section-paragraph">
                                 <span className="section-check">✔</span>
@@ -174,7 +174,7 @@ export default function Home() {
                         </p>
                         <p className="section-paragraph">
                             <span className="section-check">✔</span>
-                            Touche créative et rigueur techniques
+                            Touche créative et rigueur technique
                         </p>
                     </div>
                 </div>
@@ -239,13 +239,12 @@ export default function Home() {
                                 </div>
                                 <p className="projet-description">
                                     Openbaguette est une plateforme
-                                    d&aapos;apprentissage du Français pour les
+                                    d&apos;apprentissage du Français pour les
                                     anglophones avec petite base
                                     d&apos;utilisateurs actifs. Elle dispose
-                                    d&apos;énormémetns de ressources et
-                                    d&apos;outils interactifs pour un
-                                    apprentissage autodidacte d&apos;une grande
-                                    rapidité.
+                                    d&apos;un grand nombre de ressources et
+                                    outils interactifs, offrant un rapidité
+                                    d'apprentissage optimale.
                                 </p>
                                 <a
                                     target="_blank"
@@ -256,7 +255,7 @@ export default function Home() {
                                             ➞
                                         </div>
                                         <div className="projet-button-text">
-                                            Visit openbaguette.com
+                                            Visiter openbaguette.com
                                         </div>
                                     </div>
                                 </a>
@@ -300,13 +299,10 @@ export default function Home() {
                                     />
                                 </div>
                                 <p className="projet-description">
-                                    Igrayem est une plateforme de mini-jeux
-                                    entre amis (Poker, Blackjack, Pong, Concours
-                                    de dessin...) permettant de créer ou de
-                                    rejoindre des parties en quelques clics,
-                                    avec ou sans compte. La jouabilité en temps
-                                    réel est assurée par une connexion WebSocket
-                                    (Socket.IO).
+                                    Plateforme de mini-jeux entre amis (Poker,
+                                    Blackjack, Pong, Concours de dessin...) en
+                                    quelques clics, avec ou sans compte. Jouez
+                                    jusqu'à 8 joueurs en simultané.
                                 </p>
                                 <a target="_blank" href="https://igrayem.com">
                                     <div className="projet-button">
@@ -314,7 +310,7 @@ export default function Home() {
                                             ➞
                                         </div>
                                         <div className="projet-button-text">
-                                            Visit igrayem.com
+                                            Visiter igrayem.com
                                         </div>
                                     </div>
                                 </a>
@@ -343,11 +339,11 @@ export default function Home() {
                                     />
                                 </div>
                                 <p className="projet-description">
-                                    Jeu de course 3D, avec niveaux complètement
-                                    personnalisables avec un simple fichier
-                                    JSON, codé en 2 petites semaines (en
-                                    comptant le temps d&apos;apprentissage des
-                                    technologies web 3D).
+                                    Jeu de course 3D, avec niveaux entièrement
+                                    personnalisables par simple fichier JSON,
+                                    réalisé en 2 semaines (temps
+                                    d&apos;apprentissage des technologies web 3D
+                                    inclus).
                                 </p>
                                 <a
                                     target="_blank"
@@ -358,7 +354,7 @@ export default function Home() {
                                             ➞
                                         </div>
                                         <div className="projet-button-text">
-                                            Play game
+                                            Jouer
                                         </div>
                                     </div>
                                 </a>
