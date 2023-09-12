@@ -166,7 +166,7 @@ export default function Home() {
                         </p>
                         <p className="section-paragraph">
                             <span className="section-check">✔</span>
-                            Bonne onnaissance des principes d&apos;UX et UI
+                            Bonne connaissance des principes d&apos;UX et UI
                         </p>
                         <p className="section-paragraph">
                             <span className="section-check">✔</span>
@@ -363,7 +363,7 @@ export default function Home() {
                         <div className="more">
                             <div>
                                 <span className="more-text">
-                                    More&nbsp;&nbsp;on&nbsp;&nbsp;my
+                                    Découvrez&nbsp;&nbsp;en&nbsp;&nbsp;plus&nbsp;&nbsp;sur&nbsp;&nbsp;mon
                                 </span>
                                 <img
                                     className="more-icon"
